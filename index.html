@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card card-shadow">
+                    
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Ping Pong Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="images/tt.jpg" alt="">
+                        </figure>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 class = "title is-one"><span id="pl1"> 0 </span> to <span id="pl2"> 0 </span></h2>
+                            <p class="subtitle" id="mess"><b>First Choose a game type</b></p>
+                            <div>
+                                <label class="label is-large is-inline" for="gamet">Playing to</label>
+                            <div class="select is-rounded">
+                            <select name="gamet" id="gamet" required>
+                                <option value="">--Choose--</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="subtitle"><h3 id="wint"></h3></p>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="is-primary button card-footer-item" id="pl1up" disabled="true">+1 Player 1</button>
+                        <button class="is-primary button card-footer-item" id="pl2up" disabled="true">+1 Player 2</button>
+                        <button class="is-danger button card-footer-item" id="reset">Reset</button>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
